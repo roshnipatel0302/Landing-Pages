@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(to right, #d8beda, #a80ebd);
+    color: white;
+    text-align: center;
+}
+
+header, footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#box {
+    width: 330px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#box:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #c70039;
+    transform: scale(1.1);
+}
+
+
+h1 {
+    font-family: "Gilroy";
+    font-size: 59px;
+    font-weight: 900;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #000;
+}
+
+h1::before {
+    content: "Hello Roshni";
+    font-family: "Gilroy";
+    font-size: 59px;
+    font-weight: 900;
+    position: absolute;
+    top: 12px;
+    left: -45px;
+    width: 100%;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+    z-index: -1;
+}

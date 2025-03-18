@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    /* height: 100%; */
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top {
+    /* height: 60%; */
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1508726295872-0b87b9999406?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+#overlay {
+    width: 100%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-color: #58505052;
+    position: relative;
+}
+
+#text {
+    display: flex;
+    width: 100%;
+    bottom: 20%;
+    position: absolute;
+    padding: 0 15vw;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text h1 {
+    font-size: 6vw;
+}
+
+#text-right {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#text-right p {
+    font-size: 12px;
+    width: 40%;
+}
+
+#text-right #icons i {
+    font-size: 20px;
+    color: rgb(193, 178, 193);
+}
+
+#bottom {
+    /* height: 40%; */
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+#bone {
+    width: 25%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-color: #fff;
+    padding: 30px;
+}
+
+#bone p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#btwo {
+    width: 25%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#bthree {
+    width: 25%;
+    /* height: 100%; */
+    min-height: inherit;
+}
+
+#bfour {
+    width: 25%;
+    /* height: 100%; */
+    background-color: #c86868f0;
+    color: #fff;
+    padding: 30px;
+    min-height: inherit;
+}
+
+#bthree-top {
+    /* height: 50%; */
+    width: 100%;
+    background-color: #999d55ed;
+    padding: 30px;
+    color: #413838f0;;
+    min-height: 20vh;
+    /* According to bottom height we used min-height */
+}
+
+#bthree-bottom {
+    /* height: 50%;   */
+    width: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1677170014257-16e491ea6516?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    min-height: 20vh;
+}
+
+#notf {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#notf #photo {
+    width: 10%;
+    /* height: 40%; */
+    border-radius: 50%;
+    /* background-color: red; */
+    min-height: 4vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+
+}
+
+#notf p {
+    font-size: 13px;
+}
+
+@media (max-width:500px) {
+    #overlay #text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text h1 {
+        font-size: 10vw;
+    }
+
+    #overlay #text #text-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #text-right p {
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #icons {
+        margin-top: 30px;
+    }
+
+    #bottom {
+        flex-direction: column;
+    }
+
+    #bone {
+        width: 100%;
+    }
+
+    #btwo {
+        width: 100%;
+    }
+
+    #bthree {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #bfour {
+        width: 100%;
+    }
+}

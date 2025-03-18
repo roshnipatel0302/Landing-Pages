@@ -1,0 +1,156 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+}
+
+#nav {
+    height: 90px;
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img {
+    height: 35px;
+    margin-right: 170px;
+}
+
+#nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav-part1 h4 {
+    margin-right: 60px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#nav-part2 i {
+    margin-right: 60px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#content {
+    width: 100%;
+    height: calc(100% - 90px);
+    position: relative;
+    display: flex;
+}
+
+#left {
+    width: 40%;
+    height: 100%;
+    padding: 50px 42px;
+}
+
+#left h5 {
+    font-size: 20px;
+    color: #323535;
+}
+
+#left h1 {
+    font-size: 50px;
+    line-height: 80px;
+    text-transform: uppercase;
+
+}
+
+#left p {
+    font-size: 20px;
+    width: 70%;
+
+}
+
+#right {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    /* padding: 150px; */
+    display: flex;
+    gap: 20px; /* Cards ke beech gap dene ke liye */
+    overflow-x: auto; /* Agar space kam hai to horizontal scroll enable kare */
+    flex-wrap: nowrap; /* Cards ko ek line me rakhne ke liye */
+}
+
+#right::-webkit-scrollbar {
+    height: 5px; /* Scrollbar height */
+}
+
+#right::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px;
+}
+
+
+
+#left button {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+
+}
+
+.elem {
+    height: 520px;
+    min-width: 360px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    flex-shrink: 0; 
+}
+
+.elem img {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.elem h4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #b8c2c2;
+    padding: 15px 30px;
+    border-radius: 6px;
+}
+.elem h5 {
+    position: absolute;
+    bottom: 9%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 500;
+}
