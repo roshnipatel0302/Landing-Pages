@@ -15,7 +15,7 @@ body {
 #main {
     height: 100%;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #d4bfeb;
     position: relative;
 }
 
@@ -29,8 +29,9 @@ body {
 }
 
 #nav img {
-    height: 35px;
+    height: 40px;
     margin-right: 170px;
+    border-radius: 50%;
 }
 
 #nav-part1 {
@@ -63,7 +64,7 @@ body {
 #left {
     width: 40%;
     height: 100%;
-    padding: 50px 42px;
+    padding: 129px 24px;
 }
 
 #left h5 {
@@ -73,13 +74,13 @@ body {
 
 #left h1 {
     font-size: 50px;
-    line-height: 80px;
+    line-height: 70px;
     text-transform: uppercase;
 
 }
 
 #left p {
-    font-size: 20px;
+    font-size: 17px;
     width: 70%;
 
 }
@@ -88,7 +89,7 @@ body {
     width: 60%;
     height: 100%;
     position: relative;
-    /* padding: 150px; */
+    padding-top: 150px;
     display: flex;
     gap: 20px; /* Cards ke beech gap dene ke liye */
     overflow-x: auto; /* Agar space kam hai to horizontal scroll enable kare */
@@ -115,6 +116,7 @@ body {
     padding: 12px 24px;
     border-radius: 50px;
     border-top-left-radius: 0;
+    margin-top: 20px;
 
 }
 
@@ -133,6 +135,7 @@ body {
     height: 70%;
     width: 100%;
     object-fit: cover;
+
 
 }
 
